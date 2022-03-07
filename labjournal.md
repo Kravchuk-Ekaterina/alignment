@@ -231,7 +231,7 @@ user    0m12,461s
 sys     0m0,317s
 ```
 ## 9. Comparation of the results on 10 protein sequences
-The table containing real times and grapical representation of the results can be found in Supplementary (Table 2, Figures 9-14)<br>
+The table containing real times and grapical representation of the results can be found in Supplementary (Table 3, Figures 15-20)<br>
 ## 10. Add more alignments using muscle/mafft:
 Here I align 2 more DNA sequences and add them to the files with 250 aligned DNA sequences using muscle of mafft.
 ```bash
