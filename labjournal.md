@@ -82,10 +82,10 @@ user    0m12,006s
 sys     0m0,163s
 ```
 ## 3. Comparation of the results on 10 DNA sequences
-The table containing real times and grapical representation of the results can be found in Supplementary (Table 1, Figures 1-6)<br>
-
+The table containing real times and grapical representation of the results can be found in Supplementary (Table 1, Figures 1-5)<br>
+I find mafft and t-coffee the best ones
 ## 4. Reverse complement problem
-While opening the file ./data/raw_data/SUP35_10seqs_strange_aln.fa we can see that alignment for 1 sequence is not satisfactory (Supplementary, fig. 7). But if we BLAST it, we see that it is the same gene of the same organism. The answer is to find the reverse complement sequence and realign it (Supplementary, fig.8)
+While opening the file ./data/raw_data/SUP35_10seqs_strange_aln.fa we can see that alignment for 1 sequence is not satisfactory (Supplementary, fig. 6). But if we BLAST it, we see that it is the same gene of the same organism. The answer is to find the reverse complement sequence and realign it
 ## 5. Using 6 various alignment algorithms on 250 DNA sequences
 ### clustalw
 ```bash
@@ -148,8 +148,8 @@ user    2m35,851s
 sys     0m1,994s
 ```
 ## 6. Comparation of the results on 250 DNA sequences
-The table containing real times and grapical representation of the results can be found in Supplementary (Table 2, Figures 9-14)<br>
-
+The table containing real times and grapical representation of the results can be found in Supplementary (Table 1, Figures 7-10)<br>
+I find CLUSTAL to be the best when you can wait or muscle when you want to make it faster.
 ## 7. Translation
 Let's translate the 10 DNA sequences:<br>
 ```bash
@@ -192,7 +192,7 @@ sys     0m0,016s
 ```
 ### mafft
 ```bash
-mafft --auto ./data/processed_data/SUP35_10seqs.g.faa >./data/processed_data/SUP35_250seqs_mafft.fa
+mafft --auto ./data/processed_data/SUP35_10seqs.g.faa >./data/processed_data/SUP35_10seqs_mafft.faa
 ```
 time:
 ```bash
@@ -231,7 +231,8 @@ user    0m12,461s
 sys     0m0,317s
 ```
 ## 9. Comparation of the results on 10 protein sequences
-The table containing real times and grapical representation of the results can be found in Supplementary (Table 3, Figures 15-20)<br>
+The table containing real times and grapical representation of the results can be found in Supplementary (Table 1, Figures 11-15)<br>
+I think muscle is the best for this goal.
 ## 10. Add more alignments using muscle/mafft:
 Here I align 2 more DNA sequences and add them to the files with 250 aligned DNA sequences using muscle of mafft.
 ```bash
